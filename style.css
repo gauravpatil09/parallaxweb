@@ -1,0 +1,138 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1 {
+    background-image: url("images/image1.jpg");
+    min-height: 100%;
+
+}
+
+.pimg2 {
+    background-image: url("images/image2.jpg");
+    min-height: 400px;
+
+}
+
+.pimg3 {
+    background-image: url("images/image3.jpg");
+    min-height: 400px;
+
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*this line creates paralax effect in our website*/
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBg {
+    background-color: #313534;
+    padding: 1vw;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section_light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section_dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.navbar {
+    background-color: white;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 10;
+    background-color: lightseagreen;
+    align-items: center;
+
+}
+
+.logo span {
+    font-size: 30px;
+    color: lightgoldenrodyellow;
+    padding-left: 1px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.logo {
+    padding-left: 8px;
+}
+
+.heading a {
+    margin-right: 6vw;
+
+}
+
+@media(min-width: 600px) {
+
+    .navbar{
+        display: none;
+    }
+
+    .pimg2,
+    .pimg3 {
+        min-height: 800px;
+    }
+}
+
+
+
+.footer {
+    background-color: #282e34;
+    height: 300px;
+    width: 100vw;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+    margin-top: 55px;
+    color: white;
+    line-height: 2;
+}
